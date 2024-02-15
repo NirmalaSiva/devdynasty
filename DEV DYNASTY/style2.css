@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text p{
+    position: absolute;
+    top: 120px;
+    left: 480px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.text h1{
+    position: absolute;
+    top: 70px;
+    left: 480px;
+    font-size: 40px;
+    letter-spacing: 20px;
+    color: navy;
+}
+.para{
+    position: absolute;
+    font-size: 22px;
+    font-weight: 50;
+    top: 150%;
+    left: 25%;
+    margin: 150px;
+}
+.section img{
+    height: 250px;
+    width: 250px;
+    left: 1px;
+    position: absolute;
+    top: 20%;
+    margin: 200px;
+}
+.btn{
+    padding: 20px;
+    margin-top: 3px;
+    background-color:navy;
+    color: #fff;
+    cursor: pointer;
+}

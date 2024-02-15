@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: sans-serif;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px 7px;
+    width: 100%;
+    background-color: darkblue;  
+}
+.logo{
+    left: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;  
+  transition: 0.5s;  
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1{
+    line-height: 25px;
+    font-size: 70px;
+    animation: mymove 5s infinite;
+    animation-delay: 2s;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+.btn-1{
+    margin: 45px;
+    padding: 15px 2px; 
+    border-radius: 2px;
+    cursor: pointer; 
+    justify-content: space-between; 
+    background-color:blue;
+    font-weight: bold;
+    color: #fff;
+
+}
+.btn-1:hover{
+    background-color:blue;
+    box-shadow: 0px 0px 8px white, 0px 0px 8px white, 0px 0px 130px white; 
+}
